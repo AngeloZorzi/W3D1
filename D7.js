@@ -26,14 +26,16 @@ elements(
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-const numbersArray = [1, 5, 8, 78, 102, 54, 65, 79, 2];
-
-const evenNumb = numbersArray.filter(() => {
-  if (numbersArray % 2 === 0) {
-    console.log(evenNumb);
-  }
+const numbersArray = [
+  { number: 2 },
+  { number: 8 },
+  { number: 15 },
+  { number: 75 },
+];
+const evenNumber = numbersArray.filter(() => {
+  evenNumber = numbersArray.number % 2 === 0;
 });
-console.log(evenNumb);
+console.log(evenNumber);
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
