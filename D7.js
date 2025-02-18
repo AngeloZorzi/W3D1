@@ -2,40 +2,27 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
+const concatStr = function (str1, str2) {
+  const combo = str1.slice(0, 2) + str2.slice(-3);
+  return combo.toUpperCase();
+};
 
+console.log(concatStr("benveuto", "giovanni"));
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-const elements = (...elements) => {
-  for (let i = 0; i < elements.length; i++) {
-    console.log(elements[i]);
-  }
+const randomNumb = function () {
+  const arrayNumb = [];
+  for (let i = 0; i < 10; i++) {}
 };
-elements(
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100),
-  Math.floor(Math.random() * 100)
-);
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-const numbersArray = [
-  { number: 2 },
-  { number: 8 },
-  { number: 15 },
-  { number: 75 },
-];
+const numbersArray = [,];
 const evenNumber = numbersArray.filter(() => {
-  evenNumber = numbersArray.number % 2 === 0;
+  numbersArray.number % 2 === 0;
 });
-console.log(evenNumber);
+
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
